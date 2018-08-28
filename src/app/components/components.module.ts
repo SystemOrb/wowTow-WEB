@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FormsModule } from '@angular/forms';
 import { NouisliderModule } from 'ng2-nouislider';
-import { JWBootstrapSwitchModule } from 'jw-bootstrap-switch-ng2';
+import { JwBootstrapSwitchNg2Module } from 'jw-bootstrap-switch-ng2';
 import { TagInputModule } from 'ngx-chips';
 import { AngularMultiSelectModule } from 'angular2-multiselect-dropdown/angular2-multiselect-dropdown';
 import { NgxGalleryModule } from 'ngx-gallery';
@@ -31,7 +31,7 @@ import { CardsAreasComponent } from './cards-areas/cards-areas.component';
         NgbModule,
         NouisliderModule,
         TagInputModule,
-        JWBootstrapSwitchModule,
+        JwBootstrapSwitchNg2Module,
         AngularMultiSelectModule,
         NgxGalleryModule,
         ImageUploadModule
@@ -52,6 +52,6 @@ import { CardsAreasComponent } from './cards-areas/cards-areas.component';
         CommentsAreasComponent,
         CardsAreasComponent
     ],
-    exports:[ ComponentsComponent ]
+    exports: [ ComponentsComponent ]
 })
 export class ComponentsModule { }

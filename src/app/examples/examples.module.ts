@@ -5,7 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { TagInputModule } from 'ngx-chips';
 import { NouisliderModule } from 'ng2-nouislider';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { JWBootstrapSwitchModule } from 'jw-bootstrap-switch-ng2';
+import { JwBootstrapSwitchNg2Module } from 'jw-bootstrap-switch-ng2';
 import { AgmCoreModule } from '@agm/core';
 
 import { ImageUploadModule } from '../shared/image-upload/image-upload.module';
@@ -37,7 +37,7 @@ import { Page500Component } from './page500/page500.component';
         NgbModule,
         TagInputModule,
         NouisliderModule,
-        JWBootstrapSwitchModule,
+        JwBootstrapSwitchNg2Module,
         AngularMultiSelectModule,
         AgmCoreModule.forRoot({
             apiKey: 'AIzaSyBr-tgUtpm8cyjYVQDrjs8YpZH7zBNWPuY'
