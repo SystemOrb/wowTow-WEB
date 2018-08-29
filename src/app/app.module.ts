@@ -13,7 +13,6 @@ import { NavbarComponent } from './shared/navbar/navbar.component';
 import { PresentationModule } from './presentation/presentation.module';
 // Routes
 import { AppRoutingModule } from './app.routing';
-import { LandingRoutingModule } from './pages/pages.routing';
 // Home
 import { PagesModule } from './pages/pages.module';
 
@@ -33,7 +32,6 @@ import { PagesModule } from './pages/pages.module';
         SectionsModule,
         ComponentsModule,
         ExamplesModule,
-        LandingRoutingModule, // Home routes
         PagesModule // Static home
     ],
     providers: [],

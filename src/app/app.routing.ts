@@ -29,12 +29,13 @@ import { IndexComponent } from './pages/public/home/index.component';
 import { NotFoundComponent } from './pages/public/404/not-found/not-found.component';
 import { AboutHomeComponent } from './pages/public/about/about-home.component';
 import { ContactHomeComponent } from './pages/public/contact/contact-home.component';
+import { PagesModule } from './pages/pages.module';
 
 const routes: Routes = [
     { path: 'presentation',         component: PresentationComponent },
-    { path: 'home',                 component: IndexComponent },
-    { path: 'about',                component: AboutHomeComponent },
-    { path: 'contact',              component: ContactHomeComponent },
+    // { path: 'home',                 component: IndexComponent },
+    // { path: 'about',                component: AboutHomeComponent },
+    // { path: 'contact',              component: ContactHomeComponent },
     { path: 'components',           component: ComponentsComponent },
     { path: 'sections',             component: SectionsComponent },
     { path: 'nucleoicons',          component: NucleoiconsComponent },
@@ -57,7 +58,7 @@ const routes: Routes = [
     { path: 'examples/page422',     component: Page422Component },
     { path: 'examples/page500',     component: Page500Component },
     { path: 'examples/page500',     component: Page500Component },
-
+    { path: '', loadChildren: () => PagesModule, },
         {path: '**', component: NotFoundComponent},
         // { path: '', redirectTo: 'presentation', pathMatch: 'full' }
 ];

@@ -1,1 +1,77 @@
-works
+<!-- MENU -->
+<app-navbar></app-navbar>
+<div class="wrapper">
+    <!-- PARALLAX -->
+    <app-header-landing></app-header-landing>
+    <!-- END PARALLAX -->
+    <!-- FETAURES -->
+    <app-about-home></app-about-home>
+    <!-- END FEATURES -->
+    <!-- How Work -->
+    <app-how-work></app-how-work>
+    <!-- End how work -->
+    <!-- video -->
+    <app-video></app-video>
+    <!-- end video -->
+    <!-- testimonials -->
+    <app-testimonials-landing></app-testimonials-landing>
+    <!-- End testimonial -->
+    <!-- Contact -->
+    <app-contact-home></app-contact-home>
+    <!-- End contact -->
+    <!-- Footer -->
+    <app-footer></app-footer>
+    <!-- End footer -->
+    <nav id="cd-vertical-nav">
+        <ul>
+            <li>
+                <a data-number="1" (click)="smoothScroll('headers')">
+                    <span style="background-color: #f8ec32" class="cd-dot"></span>
+                    <span class="cd-label">Headers</span>
+                </a>
+            </li>
+            <li>
+                <a data-number="2" (click)="smoothScroll('features')">
+                    <span style="background-color: #f8ec32" class="cd-dot"></span>
+                    <span class="cd-label">Features</span>
+                </a>
+            </li>
+            <li>
+                <a data-number="3" (click)="smoothScroll('blogs')">
+                    <span style="background-color: #f8ec32" class="cd-dot"></span>
+                    <span class="cd-label">Blogs</span>
+                </a>
+            </li>
+            <li>
+                <a data-number="4" (click)="smoothScroll('teams')">
+                    <span style="background-color: #f8ec32" class="cd-dot"></span>
+                    <span class="cd-label">Teams</span>
+                </a>
+            </li>
+            <li>
+                <a data-number="5" (click)="smoothScroll('projects')">
+                    <span style="background-color: #f8ec32" class="cd-dot"></span>
+                    <span class="cd-label">Projects</span>
+                </a>
+            </li>
+            <li>
+                <a data-number="6" (click)="smoothScroll('pricing')">
+                    <span style="background-color: #f8ec32" class="cd-dot"></span>
+                    <span class="cd-label">Pricing</span>
+                </a>
+            </li>
+            <li>
+                <a data-number="7" (click)="smoothScroll('testimonials')">
+                    <span style="background-color: #f8ec32" class="cd-dot"></span>
+                    <span class="cd-label">Testimonials</span>
+                </a>
+            </li>
+            <li>
+                <a data-number="8" (click)="smoothScroll('contact-us')">
+                    <span style="background-color: #f8ec32" class="cd-dot"></span>
+                    <span class="cd-label">Contact Us</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</div>

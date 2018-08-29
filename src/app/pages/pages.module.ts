@@ -5,15 +5,22 @@ import { ContactHomeComponent } from './public/contact/contact-home.component';
 import { IndexComponent } from './public/home/index.component';
 import { LoginComponent } from './public/login/login.component';
 import { RegisterComponent } from './public/register/register.component';
-import { FooterComponent } from './public/shared/footer/footer.component';
-import { NavbarComponent } from './public/shared/navbar/navbar.component';
 import { NotFoundComponent } from './public/404/not-found/not-found.component';
 import { RouterModule } from '@angular/router';
+import { LandingRoutingModule } from './pages.routing';
+import { SubComponentsModule } from './public/shared/sub-components.module';
+import { HowWorkComponent } from './public/work/how-work.component';
+import { VideoComponent } from './public/work/video.component';
+import { TestimonialsLandingComponent } from './public/testimonials/testimonials-landing.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   imports: [
     CommonModule,
-    RouterModule
+    RouterModule,
+    LandingRoutingModule,
+    SubComponentsModule,
+    NgbModule.forRoot()
   ],
   declarations: [
     AboutHomeComponent,
@@ -21,9 +28,10 @@ import { RouterModule } from '@angular/router';
     IndexComponent,
     LoginComponent,
     RegisterComponent,
-    FooterComponent,
-    NavbarComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    HowWorkComponent,
+    VideoComponent,
+    TestimonialsLandingComponent
   ]
 })
 export class PagesModule { }
