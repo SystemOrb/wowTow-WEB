@@ -3,8 +3,7 @@ import { CommonModule } from '@angular/common';
 import { AboutHomeComponent } from './public/about/about-home.component';
 import { ContactHomeComponent } from './public/contact/contact-home.component';
 import { IndexComponent } from './public/home/index.component';
-import { LoginComponent } from './public/login/login.component';
-import { RegisterComponent } from './public/register/register.component';
+import { LoginComponentLanding } from './public/login/login.component';
 import { NotFoundComponent } from './public/404/not-found/not-found.component';
 import { RouterModule } from '@angular/router';
 import { LandingRoutingModule } from './pages.routing';
@@ -26,8 +25,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     AboutHomeComponent,
     ContactHomeComponent,
     IndexComponent,
-    LoginComponent,
-    RegisterComponent,
+    LoginComponentLanding,
     NotFoundComponent,
     HowWorkComponent,
     VideoComponent,

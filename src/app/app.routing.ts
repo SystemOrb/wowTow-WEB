@@ -3,6 +3,7 @@ import { CommonModule, } from '@angular/common';
 import { BrowserModule  } from '@angular/platform-browser';
 import { Routes, RouterModule } from '@angular/router';
 
+// Components
 import { PresentationComponent } from './presentation/presentation.component';
 import { ComponentsComponent } from './components/components.component';
 import { SectionsComponent } from './sections/sections.component';
@@ -25,11 +26,11 @@ import { Page404Component } from './examples/page404/page404.component';
 import { Page422Component } from './examples/page422/page422.component';
 import { Page500Component } from './examples/page500/page500.component';
 import { NucleoiconsComponent } from './components/nucleoicons/nucleoicons.component';
-import { IndexComponent } from './pages/public/home/index.component';
 import { NotFoundComponent } from './pages/public/404/not-found/not-found.component';
-import { AboutHomeComponent } from './pages/public/about/about-home.component';
-import { ContactHomeComponent } from './pages/public/contact/contact-home.component';
 import { PagesModule } from './pages/pages.module';
+import { LoginComponentLanding } from './pages/public/login/login.component';
+import { RegisterComponentLanding } from './pages/public/register/register.component';
+import { RegisterProviderComponent } from './pages/public/register-provider/register.component';
 
 const routes: Routes = [
     { path: 'presentation',         component: PresentationComponent },
@@ -37,6 +38,9 @@ const routes: Routes = [
     // { path: 'about',                component: AboutHomeComponent },
     // { path: 'contact',              component: ContactHomeComponent },
     { path: 'components',           component: ComponentsComponent },
+    { path: 'login',                component: LoginComponentLanding},
+    { path: 'register',             component: RegisterComponentLanding },
+    { path: 'register/provider',    component: RegisterProviderComponent },
     { path: 'sections',             component: SectionsComponent },
     { path: 'nucleoicons',          component: NucleoiconsComponent },
     { path: 'examples/aboutus',     component: AboutusComponent },

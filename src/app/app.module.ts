@@ -15,12 +15,16 @@ import { PresentationModule } from './presentation/presentation.module';
 import { AppRoutingModule } from './app.routing';
 // Home
 import { PagesModule } from './pages/pages.module';
+import { RegisterComponentLanding } from './pages/public/register/register.component';
+import { RegisterProviderComponent } from './pages/public/register-provider/register.component';
 
 
 @NgModule({
     declarations: [
         AppComponent,
-        NavbarComponent
+        NavbarComponent,
+        RegisterComponentLanding,
+        RegisterProviderComponent
     ],
     imports: [
         BrowserAnimationsModule,

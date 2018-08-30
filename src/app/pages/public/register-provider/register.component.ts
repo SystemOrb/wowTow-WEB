@@ -5,9 +5,9 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
   templateUrl: './register.component.html',
   styles: []
 })
-// tslint:disable-next-line:component-class-suffix
-export class RegisterComponentLanding implements OnInit {
+export class RegisterProviderComponent implements OnInit {
   data: Date = new Date();
+
   constructor() { }
 
   ngOnInit() {
